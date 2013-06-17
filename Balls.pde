@@ -1,7 +1,7 @@
-int NUM_BALLS = 15;
+final int NUM_BALLS = 15;
 Ball[] balls = new Ball[NUM_BALLS];
-float SPRING = 50;
-float REDUCTION = 0.995;
+final float SPRING = 50;
+final float REDUCTION = 0.995;
 boolean recording = false;
 
 //--------------------------------------------------
