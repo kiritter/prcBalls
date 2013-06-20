@@ -27,6 +27,10 @@ header{
 	z-index: 9999;
 	width:640px;
 }
+header a{
+	position: fixed;
+	top: 10px;
+}
 .page-title{
 	width:480px;
 	margin: 0.5em auto 0.5em auto;
