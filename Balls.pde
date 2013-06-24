@@ -2,7 +2,6 @@ final int NUM_BALLS = 15;
 Ball[] balls = new Ball[NUM_BALLS];
 final float SPRING = 50;
 final float REDUCTION = 0.995;
-boolean recording = false;
 
 //--------------------------------------------------
 void setup(){
@@ -39,14 +38,10 @@ void draw(){
     balls[i].bound();
     balls[i].collide();
   }
-
-  if (recording == true) {
-    saveFrame("output/frame-####.png");
-  }
 }
 void keyPressed() {
   if (key == 'r') {
-    recording = (!recording);
+    saveFrame("output/frame-####.png");
   }
 }
 
